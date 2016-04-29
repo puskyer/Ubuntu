@@ -14,11 +14,9 @@ unitylauncher=$(gsettings get \
 echo $unitylauncher
 
 if [ $unitylauncher -eq 1 ]; then
-    gsettings set \
-    org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ \
+    gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ \
     launcher-hide-mode 0
 else
-    gsettings set \
-    org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ \
+    gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ \
     launcher-hide-mode 1
 fi
